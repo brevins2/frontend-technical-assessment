@@ -1,7 +1,9 @@
+import { Navigation } from './navigation.js';
 import { DragDrop } from './dragDrop.js';
 import { BlogList } from './BlogList.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    new Navigation();
     // Initialize Drag & Drop
     const dragDropContainer = document.querySelector('.drag-drop-container');
     if (dragDropContainer) {
@@ -16,4 +18,3 @@ document.addEventListener('DOMContentLoaded', () => {
         blogList.init();
     }
 });
-
